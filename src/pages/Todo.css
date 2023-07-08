@@ -1,0 +1,101 @@
+*{
+    font-family: serif;
+}
+
+.todo-container{
+    margin:5rem auto;
+    width: 60% ;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.212);
+}
+
+.todo-container h1{
+    color: rgba(0, 0, 0, 0.596);
+    text-align: center;
+ }
+
+.add-todo-section{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.add-todo-section input{
+    flex: 8;
+    width: 100%;
+    padding: 0.5rem;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.add-todo-section button{
+    flex: 1;
+    border-radius: .5rem;
+    background-color: rgb(74, 238, 74);
+    border: 2px solid rgba(38, 83, 38, 0.589) ;
+    font-weight: 500;
+    text-transform:uppercase;
+}
+
+.add-todo-section button:hover{
+   background-color: rgba(10, 172, 10, 0.589) ;
+   color: white;
+}
+
+.todo-lists{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #d6d6d6;
+    font-weight: 600;
+    font-size: large;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.todo-buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.todo-buttons button{
+    border-radius: .5rem;
+    border: none;
+    padding: 0rem .5rem;
+}
+
+.todo-buttons button:nth-child(odd):hover{
+    background-color: rgb(240, 224, 1);
+}
+
+.todo-buttons button:nth-child(even):hover{
+    background-color: rgb(238, 86, 86);
+}
+
+@media screen and (max-width: 768px) {
+    .todo-container{
+        margin: 3rem auto;
+        width: 90%;
+    }
+}
